@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #111;
+}
+main {
+  background-color: #e8e4e1;
+}
+h2 {
+  text-align: center;
+  background-color: #111;
+  color: #f3cf7a;
+  padding: 10px;
+}
+h3 {
+  opacity: 0.6;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+/* For mobile - notflex */
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  .content-top .flex {
+    flex-direction: column;
+  }
+  .flex .award {
+    flex-direction: column;
+    flex: 100%;
+  }
+  .flex .video {
+    flex-direction: column;
+    flex: 100%;
+  }
+}
+/* Navigace */
+nav {
+  padding: 15px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #f3cf7a;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* About */
+.title {
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+.content-top {
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  /* align-items: center; */
+}
+/* not to disform img: */
+img {
+  max-width: 100%;
+}
+.content-img__item {
+  background-color: #fff;
+  padding: 10px;
+}
+.content-img {
+  flex: 1;
+  text-align: center;
+}
+figcaption {
+  padding: 10px;
+}
+.content-top__text {
+  flex: 1;
+  padding: 0 50px;
+  text-align: center;
+  line-height: 2;
+}
+article {
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.album {
+  flex: 0 1 33%;
+  padding: 10px;
+}
+.award {
+  background-color: #fff;
+  flex: 0 1 25%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.video {
+  flex: 0 1 25%;
+  margin: 10px;
+}
+.fab {
+  padding: 10px;
+  color: #111;
+}
+/* Footer */
+footer {
+  padding: 15px;
+  text-align: center;
+}
