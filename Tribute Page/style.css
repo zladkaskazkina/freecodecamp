@@ -94,6 +94,7 @@ nav ul li a {
 /* not to disform img: */
 img {
   max-width: 100%;
+  display: block;
 }
 .content-img__item {
   background-color: #fff;
