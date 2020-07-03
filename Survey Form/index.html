@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="form">
+      <h1 id="title" class="form__header">Satisfaction Survey Form</h1>
+      <p id="description">
+        Help us to know better your satisfaction with our course
+      </p>
+      <form
+        action="greeting.html"
+        method="POST"
+        id="survey-form"
+        class="form__body"
+      >
+        <div class="form__input">
+          <!-- <label for="name">Your name</label> -->
+          <input id="name" type="text" placeholder="Enter your name" />
+          <span class="helper-text"></span>
+        </div>
+
+        <div class="form__input">
+          <!-- <label for="email">Your email</label> -->
+          <input id="email" type="email" placeholder="Enter your email" />
+          <span class="helper-text"></span>
+        </div>
+
+        <div class="form__input">
+          <!-- <label for="age">Your age</label> -->
+          <input id="age" type="number" placeholder="Enter your age" />
+          <span class="helper-text"></span>
+        </div>
+        <div class="form__input">
+          <p>What is your current role?</p>
+          <select name="role" id="dropdown" required>
+            <option disabled selected value>Select current role</option>
+            <option value="">Student</option>
+            <option value="">Work full-time</option>
+            <option value="">Work part-time</option>
+            <option value="">Maternity live</option>
+            <option value="">Business</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+        <hr />
+        <div class="form__input">
+          <p>How's the review of our course?</p>
+          <label> <input type="radio" name="" />Great! </label>
+          <label> <input type="radio" name="" />I like it. </label>
+          <label>
+            <input type="radio" name="" />I think it could be better</label
+          >
+          <label> <input type="radio" name="" />I'm disappointed </label>
+        </div>
+
+        <div class="form__input">
+          <p>What were your favorite parts of a course?</p>
+          <label for=""
+            ><input type="checkbox" name="" id="" />Study Sessions</label
+          >
+          <label for=""><input type="checkbox" name="" id="" />Project</label>
+          <label for=""><input type="checkbox" name="" id="" />Homeworks</label>
+          <label for=""
+            ><input type="checkbox" name="" id="" />Community Sessions</label
+          >
+          <label for=""
+            ><input type="checkbox" name="" id="" />Our coaches</label
+          >
+        </div>
+
+        <div class="form__input">
+          <p>Comments and Suggestions</p>
+          <textarea
+            name=""
+            id="comments"
+            cols="30"
+            rows="5"
+            placeholder="Enter your comment here ..."
+          ></textarea>
+        </div>
+        <div class="form__input">
+          <label for="agree" class="agree"
+            ><input type="checkbox" name="" id="agree" required />I have read
+            and agree with Terms and Conditions
+          </label>
+        </div>
+        <div class="btn-field">
+          <button class="form__btn" type="submit">Submit</button>
+        </div>
+      </form>
+      <p id="sucess"></p>
+      <p id="fail"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
